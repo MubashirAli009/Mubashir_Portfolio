@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mubashir Ali | Web & Android Developer | MERN Stack Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Custom Cursor (desktop only via JS) -->
+  <div class="custom-cursor" aria-hidden="true">
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Mubashir Ali</div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" data-cursor="blue" onclick="scrollToSection('home')">Home</a></li>
+        <li><a href="#about" data-cursor="purple" onclick="scrollToSection('about')">About</a></li>
+        <li><a href="#skills" data-cursor="cyan" onclick="scrollToSection('skills')">Skills</a></li>
+        <li><a href="#projects" data-cursor="pink" onclick="scrollToSection('projects')">Projects</a></li>
+        <li><a href="#experience" data-cursor="orange" onclick="scrollToSection('experience')">Experience</a></li>
+        <li><a href="#freelance" data-cursor="green" onclick="scrollToSection('freelance')">Services</a></li>
+        <li><a href="#contact" data-cursor="blue" onclick="scrollToSection('contact')">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Starry Background -->
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Welcome to my portfolio</div>
+      <h1 class="hero-title">Mubashir Ali</h1>
+      <h2 class="hero-subtitle">Web & Android Developer</h2>
+      <p class="hero-tagline">MERN Stack Developer | Full-Stack Solutions</p>
+      <p class="hero-description">Building Remarkable Web & Mobile Solutions.</p>
+      <p class="hero-education">BS Computer Science, COMSATS University Islamabad (Attock Campus)</p>
+      <div class="hero-buttons">
+        <button onclick="scrollToSection('projects')" class="btn btn-primary" data-cursor="pink">
+          <span>View Portfolio</span>
+        </button>
+        <button onclick="scrollToSection('contact')" class="btn btn-outline" data-cursor="blue">
+          <span>Hire Me</span>
+        </button>
+      </div>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/mubashir-ali" target="_blank" aria-label="LinkedIn" data-cursor="blue">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/MubashirAli009" target="_blank" aria-label="GitHub" data-cursor="purple">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://dribbble.com" target="_blank" aria-label="Dribbble" data-cursor="pink">
+          <i class="fab fa-dribbble"></i>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator" onclick="scrollToSection('about')">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get to know me</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="stats-grid">
+        <div class="stat-card fade-in">
+          <div class="stat-icon">🌐</div>
+          <div class="stat-value">3+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-card fade-in">
+          <div class="stat-icon">📱</div>
+          <div class="stat-value">2+</div>
+          <div class="stat-label">Completed Projects</div>
+        </div>
+        <div class="stat-card fade-in">
+          <div class="stat-icon">🚀</div>
+          <div class="stat-value">15+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+      </div>
+
+      <div class="about-content fade-in">
+        <div class="about-text">
+          <p class="about-paragraph">
+            <span class="bullet blue">👨‍💻</span>
+            I am a Web and Android Developer with hands-on experience in building scalable, user-centric web and mobile applications. I have strong expertise in React.js, React Native, Node.js, Express.js, MongoDB, and Firebase.
+          </p>
+          <p class="about-paragraph">
+            <span class="bullet purple">⚡</span>
+            My experience spans full-stack development, RESTful APIs, authentication systems, dashboards, and responsive UI. I've integrated AI/ML concepts using TensorFlow in a mobile app as part of my Final Year Project.
+          </p>
+          <p class="about-paragraph">
+            <span class="bullet pink">🎯</span>
+            I'm focused on delivering clean code, optimal performance, and intuitive UI/UX that provides exceptional user experiences.
+          </p>
+        </div>
+      </div>
+
+      <div class="tech-badges fade-in">
+        <span class="tech-badge">React</span>
+        <span class="tech-badge">Node</span>
+        <span class="tech-badge">MongoDB</span>
+        <span class="tech-badge">Express</span>
+        <span class="tech-badge">NextJS</span>
+        <span class="tech-badge">Tailwind</span>
+        <span class="tech-badge">React Native</span>
+        <span class="tech-badge">Firebase</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="title-underline"></div>
+        <p class="section-description">A passionate developer with a keen eye for details.</p>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🎨</div>
+          <h3 class="skill-title">Frontend Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Vue</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Tailwind CSS</span>
+          </div>
+        </div>
+        
+        <div class="skill-card fade-in">
+          <div class="skill-icon">⚙️</div>
+          <h3 class="skill-title">Backend Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Node</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Django</span>
+          </div>
+        </div>
+        
+        <div class="skill-card fade-in">
+          <div class="skill-icon">💻</div>
+          <h3 class="skill-title">Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C#</span>
+          </div>
+        </div>
+        
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🛠️</div>
+          <h3 class="skill-title">Tools & Technologies</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Netlify</span>
+          </div>
+        </div>
+        
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🤝</div>
+          <h3 class="skill-title">Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Teamwork</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Time Management</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skills-cta">
+        <button class="btn btn-gradient">Always Learning</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="title-underline"></div>
+        <p class="section-description">Explore my recent work showcasing my skills as a developer and a modern web design.</p>
+      </div>
+      
+      <div class="projects-grid">
+        <div class="project-card fade-in">
+          <div class="project-header project-blue">
+            <div class="project-icon">🌤️</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Simple Weather Forecast Website</h3>
+            <p class="project-description">A clean and intuitive weather forecast application built with modern web technologies. Features real-time weather data, location-based forecasts, and responsive design.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">API</span>
+              <span class="tech-tag">CSS</span>
+            </div>
+            <a href="https://simple-weather-website.netlify.app/" target="_blank" class="btn btn-project">
+              View Project
+            </a>
+          </div>
+        </div>
+        
+        <div class="project-card fade-in">
+          <div class="project-header project-orange">
+            <div class="project-icon">🍽️</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">RainyRoof Restaurant Website</h3>
+            <p class="project-description">A modern restaurant website with elegant design, interactive menu, online reservation system, and smooth user experience.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="https://rainyroof.vercel.app/" target="_blank" class="btn btn-project">
+              View Project
+            </a>
+          </div>
+        </div>
+        
+        <div class="project-card fade-in">
+          <div class="project-header project-pink">
+            <div class="project-icon">🍅</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Tomato Delivery App</h3>
+            <p class="project-description">Full-stack food delivery application built with MERN stack. Features include user authentication, cart management, order tracking, and admin dashboard.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+            <a href="https://tomatodeliveryapp.netlify.app/" target="_blank" class="btn btn-project">
+              View Project
+            </a>
+          </div>
+        </div>
+        
+        <div class="project-card fade-in">
+          <div class="project-header project-green">
+            <div class="project-icon">🥗</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Omnifood Landing Page</h3>
+            <p class="project-description">A beautiful, conversion-optimized landing page for a food subscription service. Features modern animations, scroll effects, and mobile-first design.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="https://omnifood.vercel.app/" target="_blank" class="btn btn-project">
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="projects-cta">
+        <button class="btn btn-gradient">View All Projects</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="title-underline"></div>
+        <p class="section-description">My professional journey and academic pursuits.</p>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content timeline-left">
+            <div class="timeline-icon">🌐</div>
+            <div class="timeline-period">2020 - Present</div>
+            <h3 class="timeline-title">Full-Stack Web Development</h3>
+            <p class="timeline-description">Developed scalable web applications using MERN stack with focus on responsive design, RESTful APIs, and modern frontend frameworks.</p>
+            <ul class="timeline-list">
+              <li>Built multiple full-stack applications with authentication systems</li>
+              <li>Implemented RESTful APIs and database integrations</li>
+              <li>Created responsive, user-friendly interfaces with React.js</li>
+              <li>Collaborated with teams using Git and Agile methodologies</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content timeline-right">
+            <div class="timeline-icon">📱</div>
+            <div class="timeline-period">2021 - Present</div>
+            <h3 class="timeline-title">Mobile Application Development</h3>
+            <p class="timeline-description">Created cross-platform mobile applications using React Native with Firebase integration and modern mobile UI/UX patterns.</p>
+            <ul class="timeline-list">
+              <li>Developed mobile apps with React Native and Firebase</li>
+              <li>Implemented real-time features and push notifications</li>
+              <li>Integrated AI/ML concepts using TensorFlow (Final Year Project)</li>
+              <li>Optimized app performance and user experience</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content timeline-left">
+            <div class="timeline-icon">💼</div>
+            <div class="timeline-period">2019 - 2020</div>
+            <h3 class="timeline-title">Internships & Projects</h3>
+            <p class="timeline-description">Gained hands-on experience through internships and real-world projects, working on frontend, backend, and full-stack solutions.</p>
+            <ul class="timeline-list">
+              <li>Frontend development with modern frameworks and libraries</li>
+              <li>Backend integration and API development</li>
+              <li>Team collaboration and code review processes</li>
+              <li>Client communication and requirement analysis</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content timeline-center">
+            <div class="timeline-icon">🎓</div>
+            <div class="timeline-period">Education</div>
+            <h3 class="timeline-title">BS Computer Science</h3>
+            <p class="timeline-description">COMSATS University Islamabad (Attock Campus)</p>
+            <div class="education-tags">
+              <span class="edu-tag">Software Engineering</span>
+              <span class="edu-tag">Web Development</span>
+              <span class="edu-tag">Mobile Development</span>
+              <span class="edu-tag">AI/ML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Freelance Services Section -->
+  <section id="freelance" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Freelance Services</h2>
+        <div class="title-underline"></div>
+        <p class="section-description">I build professional websites, full-stack web applications, and mobile apps for startups, businesses, and individuals with a focus on performance, scalability, and clean UI/UX.</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon">🌐</div>
+          <h3 class="service-title">Professional Websites</h3>
+          <p class="service-description">Custom websites with modern design, responsive layouts, and optimal performance.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+          <div class="service-icon">💼</div>
+          <h3 class="service-title">Full-Stack Applications</h3>
+          <p class="service-description">End-to-end web applications with robust backend, database, and interactive frontend.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+          <div class="service-icon">📱</div>
+          <h3 class="service-title">Mobile Apps</h3>
+          <p class="service-description">Cross-platform mobile applications built with React Native for iOS and Android.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+          <div class="service-icon">🚀</div>
+          <h3 class="service-title">Performance & Scalability</h3>
+          <p class="service-description">Optimized solutions designed to grow with your business needs.</p>
+        </div>
+        
+        <div class="service-card fade-in service-featured">
+          <div class="service-icon">🎨</div>
+          <h3 class="service-title">Clean UI/UX</h3>
+          <p class="service-description">Intuitive interfaces focused on user experience and modern design principles.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+          <div class="service-icon">🔧</div>
+          <h3 class="service-title">Maintenance & Support</h3>
+          <p class="service-description">Ongoing support, updates, and feature enhancements for your applications.</p>
+        </div>
+      </div>
+      
+      <div class="freelance-cta">
+        <button onclick="scrollToSection('contact')" class="btn btn-gradient btn-large">
+          Let's Build Something Great Together
+        </button>
+      </div>
+      
+      <div class="freelance-stats">
+        <div class="freelance-stat">
+          <div class="stat-number">15+</div>
+          <div class="stat-text">Projects</div>
+        </div>
+        <div class="freelance-stat">
+          <div class="stat-number">100%</div>
+          <div class="stat-text">Satisfaction</div>
+        </div>
+        <div class="freelance-stat">
+          <div class="stat-number">24/7</div>
+          <div class="stat-text">Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="title-underline"></div>
+        <p class="section-description">Are you ready to collaborate on freelance work and new opportunities? Let's discuss your ideas and bring your project to life!</p>
+      </div>
+      
+      <div class="contact-grid">
+        <a href="mailto:mubashirali432102@gmail.com" class="contact-card fade-in">
+          <div class="contact-icon">📧</div>
+          <h3 class="contact-title">Email</h3>
+          <p class="contact-value">mubashirali432102@gmail.com</p>
+        </a>
+        
+        <a href="https://linkedin.com/in/mubashir-ali" target="_blank" class="contact-card fade-in">
+          <div class="contact-icon">💼</div>
+          <h3 class="contact-title">LinkedIn</h3>
+          <p class="contact-value">linkedin.com/in/mubashir-ali</p>
+        </a>
+        
+        <a href="https://github.com/MubashirAli009" target="_blank" class="contact-card fade-in">
+          <div class="contact-icon">💻</div>
+          <h3 class="contact-title">GitHub</h3>
+          <p class="contact-value">github.com/MubashirAli009</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer CTA Section -->
+  <section class="footer-cta section-dark">
+    <div class="container">
+      <div class="footer-cta-content">
+        <div class="footer-icon">🚀</div>
+        <h2 class="footer-title">Let's Build Something Great Together</h2>
+        <p class="footer-description">Whether you need a website, web application, or mobile app, I'm here to help you turn your ideas into reality with a clean code and modern design.</p>
+        
+        <div class="footer-form">
+          <input type="text" placeholder="Your Name" class="footer-input">
+          <input type="email" placeholder="Your Email" class="footer-input">
+          <button class="btn btn-gradient btn-large">Send Message</button>
+        </div>
+        
+        <div class="footer-features">
+          <div class="footer-feature">
+            <div class="feature-icon">⚡</div>
+            <div class="feature-text">Fast Delivery</div>
+          </div>
+          <div class="footer-feature">
+            <div class="feature-icon">💎</div>
+            <div class="feature-text">High Quality</div>
+          </div>
+          <div class="footer-feature">
+            <div class="feature-icon">🎯</div>
+            <div class="feature-text">Good Communication</div>
+          </div>
+          <div class="footer-feature">
+            <div class="feature-icon">💬</div>
+            <div class="feature-text">Client Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-copyright">© 2024 Mubashir Ali. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://dribbble.com" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <div class="footer-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
